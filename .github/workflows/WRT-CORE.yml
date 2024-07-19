@@ -85,7 +85,7 @@ jobs:
           docker rmi $(docker images -q)
           sudo bash -c 'bash <(curl -s https://build-scripts.immortalwrt.org/init_build_environment.sh)'
           sudo -E apt-get -y install   dos2unix
-          sudo -E timedatectl set-timezone "Asia/Shanghai"
+
 
       - name: Initialization Values
         run: |
