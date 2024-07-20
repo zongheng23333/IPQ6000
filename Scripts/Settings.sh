@@ -36,10 +36,10 @@ if [ -n "$WRT_PACKAGE" ]; then
 	echo "$WRT_PACKAGE" >> ./.config
 fi
 
-#高通平台锁定512M内存
+#高通平台锁定512M内存，1G无法启动
 if [[ $WRT_TARGET == *"QCA"* ]]; then
-	echo "CONFIG_ATH11K_MEM_PROFILE_1G=y" >> ./.config
-	echo "CONFIG_ATH11K_MEM_PROFILE_512M=n" >> ./.config
+	echo "CONFIG_ATH11K_MEM_PROFILE_1G=n" >> ./.config
+	echo "CONFIG_ATH11K_MEM_PROFILE_512M=y" >> ./.config
 fi
 
 #科学插件设置
