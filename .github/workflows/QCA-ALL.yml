@@ -39,13 +39,13 @@ jobs:
       #编译平台
       WRT_TARGET: ${{matrix.TARGET}}
       #默认主题
-      WRT_THEME: argon
+      WRT_THEME: kucat
       #默认主机名
-      WRT_NAME: OWRT
+      WRT_NAME: ZH_WRT
       #默认WIFI名
-      WRT_WIFI: OWRT
+      WRT_WIFI: ZH_WRT
       #默认地址
-      WRT_IP: 192.168.10.1
+      WRT_IP: 192.168.6.1
       #默认密码，仅作提示，修改无用
       WRT_PW: 无
       #源码链接
