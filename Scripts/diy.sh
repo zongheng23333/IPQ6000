@@ -1,7 +1,5 @@
 #!/bin/bash
 sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
-sed -i '$a src-git docker https://github.com/lisaac/luci-lib-docker' feeds.conf.default
-sed -i '$a src-git dockerman https://github.com/lisaac/luci-app-dockerman' feeds.conf.default
 
 
  sed -i '$a src-git ikoolproxy   https://github.com/ilxp/luci-app-ikoolproxy' feeds.conf.default
