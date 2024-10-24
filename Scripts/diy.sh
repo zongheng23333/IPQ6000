@@ -9,6 +9,5 @@ rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftabl
 rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/smpackage/luci-app-openclash   feeds/luci/applications/luci-app-openclash
 git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
-rm -rf feeds/smpackage/applications/homeproxy
-rm -rf feeds/smpackage/applications/*homeproxy
+
 ./scripts/feeds install -a  
